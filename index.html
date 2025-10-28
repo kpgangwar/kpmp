@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Player</title>
+
+  <!-- Link to CSS -->
+   <link rel="stylesheet" href="style.css" /> 
+
+ 
+
+  <link rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+   integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+   crossorigin="anonymous" 
+   referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="music-player">
+    <h1>🎧 Music Player</h1> 
+
+     <!-- 📸 Image Section -->
+    <div class="album-art">
+      <img id="song-image" src="images/cover1.jpg" alt="Album Art">
+    </div>
+
+    <!-- <div class="photo-icon">
+  <img src="images/krishna.jpg" alt="krishna" id="photo-icon">
+</div> -->
+
+    <!-- Audio element -->
+     <audio id="song" src="songs/WhatsApp Audio 2025-10-28 at 18.00.12_c7f6574a.mp3"></audio> 
+     <!-- <audio id="song" src="songs/WhatsApp Audio 2024-05-13 at 17.27.02_2fbb5687.mp3"></audio>  -->
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="play-pause"><i class="fa fa-play" id="action"></i></button>
+      <input id="progress" type="range" min="0" max="100" value="0" />
+      
+      <button id="next-song"><i class="fa fa-forward"></i></button>
+      <button id="prev-song"><i class="fa fa-backward"></i></button>
+      <!-- <button id="volume-up"><i class="fa fa-volume-high"></i></button> -->
+
+      <button id="mute-btn"><i class="fa fa-volume-high"></i></button>
+
+
+      <input id="volume" type="range" min="0" max="1" step="0.1" value="1" />
+    </div> 
+
+    <!-- Song List -->
+     <div class="song-list"> 
+      <button id="song1">songs/WhatsApp Audio 2025-10-28 at 18.00.12_c7f6574a.mp3</button>
+      <button id="song2">songs/hanuman-chalisa-lyrics-download.mp3</button>
+      <button id="song3">songs/free-soul-gayatri-mantra-v3-soothing-chanting-song-399392.mp3</button>
+      <button id="song4">songs/Mahamrityunjay Mantra 108 Times - Shankar Sahney (pagalall.com).mp3</button>
+    </div> 
+  </div> 
+
+  <!-- JS Script -->
+   <script src="script.js"></script>
+</body>
+</html>
